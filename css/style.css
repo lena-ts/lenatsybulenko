@@ -275,7 +275,7 @@ h1, h2, h3, h3, h4, p{
 /*Mobile*/
 @media (max-width:480px){
 	#intro h1{
-		font-size:40px;
-		line-height: 44px;
+		font-size:30px;
+		line-height: 36px;
 		}
 }
