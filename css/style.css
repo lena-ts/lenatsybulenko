@@ -1,0 +1,283 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500italic,700,900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2, h3, h3, h4, p{
+	color:#000;
+	font-family:"Roboto", sans-serif;
+}
+
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+
+.intro-section {
+/*    height: 100vh; */
+    padding-top: 160px;
+    text-align: center;
+    background: #fff;
+	padding-bottom:100px;
+}
+
+.portfolio-section {
+/*    height: 100%; */
+    padding-top: 0px;
+    text-align: center;
+    background: /*#252339*/ #fff;
+}
+
+.services-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+        background: #eee;
+}
+
+.contact-section {
+/*    height: 100%;*/
+    padding: 80px 0px;
+    text-align: center;
+    background: #fff;
+}
+
+.author-pic{
+	-webkit-border-radius:100%;
+	border-radius:100%;
+	overflow:hidden;
+	width:220px;
+	height:220px;
+	margin:0 auto;
+	border:1px solid #ebebeb;
+	
+}
+
+.author-pic img{
+	-webkit-border-radius:100%;
+	border-radius:100%;
+	padding:5px;
+}
+
+
+#intro h1{
+	font-weight:300;
+	font-size:50px;
+	line-height:60px;
+	margin:70px 0px 25px;	
+	font-family:"Montserrat", sans-serif;
+/*	font-size:22px;
+	line-height:32px;
+	letter-spacing:5px;
+	line-height:25px;
+	text-transform:uppercase;
+	font-weight:bold;*/
+}
+
+#intro strong{
+	font-weight:400;
+}
+
+#intro p{
+	font-size:22px;
+	line-height:30px;
+	font-family:"Raleway";
+	width: 80%;
+	display: inline-block;
+	margin: 50px auto 40px;
+		
+}
+#intro p strong{
+		font-weight:600;
+}
+
+#contact h1{
+	padding:0px 0px 50px 0px;
+	color:#000;
+	text-transform:uppercase;
+	font-size:16px;
+	letter-spacing:5px;
+	font-family:"Montserrat";
+}
+
+.portfolio-section h1{
+	padding:0px 0px 100px 0px;
+	color:#fff;
+	text-transform:uppercase;
+	font-size:16px;
+	letter-spacing:5px;
+	font-family:"Montserrat";
+}
+.portfolio-section p{
+	color:#fff;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 13px;
+}
+
+.navbar-default .navbar-brand {
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: bold;
+	outline:none;
+	}
+
+.navbar-default {
+    background-color: #fff;
+	border:0;
+}	
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover{
+	background:/*#15a5e8;*/ #fff;
+	color:#000;
+	font-weight:bold;
+}
+
+.btn-default.active, 
+.btn-default.focus, 
+.open>.dropdown-toggle.btn-default,
+.portfolio-btn{
+	background:#fff;
+	border:1px solid /*#286fda*/ #ebebeb;
+	color:#000;
+	text-transform:uppercase;
+	letter-spacing:5px;
+	padding:10px 25px;
+	
+}
+.btn-default:active, 
+.btn-default:focus, 
+.btn-default:hover{
+	background:#286fda;
+	color:#fff;
+	border:1px solid #286fda;
+}
+
+.portfolio-item{
+	padding:0;
+	margin-left:-1px;
+	position:relative;
+	height:/*330px*/ auto;
+	overflow:hidden; 
+}
+
+.portfolio-item-overlay{
+/* 	background:rgba(21,165,232, 0.96);  */
+/*	background:rgba(37,35,57, 0.96); 
+	background:rgba(51,122,183, 0.96); 	*/
+	background:rgba(255,255,255, 0.96); 	
+	display:block;
+	width:100%;
+	height:100%;
+	position:absolute; 
+	bottom:0px;
+	opacity:0;
+	padding:120px 30px;
+/*	text-align:left;  */
+	z-index:1;
+	-webkit-transition:0.25s ease-out;
+	transition:0.25s ease-out;
+
+}
+
+.portfolio-item-overlay h4{
+	color:#000;
+	text-transform:uppercase;
+	font-size:16px;
+	line-height:18px;
+	letter-spacing:4px;
+	font-weight:bold;	
+	font-family:"Montserrat";
+}
+.portfolio-item-overlay p{
+	color:#000;
+	text-transform:uppercase;
+	font-size:9px;
+	letter-spacing:2px;
+	margin-top:15px;
+}
+.portfolio-item img{
+	-webkit-transition:0.2s ease-out;
+	transition:0.2s ease-out;
+	z-index:100;
+/*	position:absolute; */
+	margin-top:0px;
+	width:100%;
+	height:auto;
+}
+.portfolio-item a:hover> .portfolio-item-overlay{
+	bottom:0;
+	opacity:1;
+}
+.portfolio-item a:hover img{
+/*	margin-left:-335px;*/
+/*	margin-left:340px; */
+/*-webkit-transform:scale(1.1);*/
+
+}
+
+/** Style for the button & div **/
+ .myButton {
+    padding: .2em 1em;
+    font-size: 1em;
+}
+.mySelect {
+    padding: .2em 0;
+    font-size: 1em;
+}
+#myDiv {
+    color:Green;
+    background-color:#eee;
+    border:2px solid #333;
+    display:none;
+    text-align:justify;
+}
+#myDiv p {
+    margin: 15px;
+    font-size: 0.917em;
+}
+/** Style for the cointainer **/
+ #body {
+    clear: both;
+    margin: 0 auto;
+    max-width: 534px;
+}
+
+/*Mobile*/
+@media (max-width:480px){
+	#intro h1{
+		font-size:40px;
+		line-height: 44px;
+		}
+}
