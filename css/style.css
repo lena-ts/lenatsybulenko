@@ -39,7 +39,7 @@ h1, h2, h3, h3, h4, p{
     padding-top: 160px;
     text-align: center;
     background: #fff;
-	padding-bottom:100px;
+	padding-bottom:50px;
 }
 
 .portfolio-section {
@@ -84,8 +84,11 @@ h1, h2, h3, h3, h4, p{
 #intro h1{
 	font-weight:300;
 	font-size:50px;
+/* 	font-size: 35px; */
 	line-height:60px;
-	margin:70px 0px 25px;	
+/* 	line-height: 45px; */
+	margin:70px auto 25px;	
+	width: 80%;
 	font-family:"Montserrat", sans-serif;
 /*	font-size:22px;
 	line-height:32px;
@@ -96,16 +99,17 @@ h1, h2, h3, h3, h4, p{
 }
 
 #intro strong{
-	font-weight:400;
+	font-weight:500;
 }
 
 #intro p{
 	font-size:22px;
 	line-height:30px;
-	font-family:"Raleway";
+	font-family:"Raleway", sans-serif;
 	width: 80%;
 	display: inline-block;
 	margin: 50px auto 40px;
+	font-weight: 300;
 		
 }
 #intro p strong{
@@ -234,15 +238,39 @@ h1, h2, h3, h3, h4, p{
 	width:100%;
 	height:auto;
 }
-.portfolio-item a:hover> .portfolio-item-overlay{
+.portfolio-item .wrapper-link:hover> .portfolio-item-overlay{
 	bottom:0;
 	opacity:1;
 }
-.portfolio-item a:hover img{
+.portfolio-item .wrapper-link:hover img{
 /*	margin-left:-335px;*/
 /*	margin-left:340px; */
 /*-webkit-transform:scale(1.1);*/
 
+}
+
+.view-links a{
+	color: black;
+	display: inline-block;
+	margin: 10px 5px;
+	padding: 5px 20px;
+	border: 1px solid #ccc;
+	border-radius: 25px;
+}
+
+.view-links a:hover{
+	text-decoration: none;
+	border-color: blue;
+	background: blue;
+	color: white;
+}
+
+.view-links a:visited {
+	text-decoration: none;
+}
+
+.btn-social-icon {
+	color: black;
 }
 
 /** Style for the button & div **/

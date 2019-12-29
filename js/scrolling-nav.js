@@ -39,9 +39,9 @@ $(document).ready(function() {
     windowHeight = $(window).innerHeight();
     $('#intro').css('min-height', windowHeight);
   };
-  setHeight();
+//   setHeight();
   
   $(window).resize(function() {
-    setHeight();
+//     setHeight();
   });
 });
