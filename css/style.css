@@ -205,12 +205,21 @@ h1, h2, h3, h3, h4, p{
 	position:absolute; 
 	bottom:0px;
 	opacity:0;
-	padding:120px 30px;
+/* 	padding:120px 30px; */
 /*	text-align:left;  */
 	z-index:1;
 	-webkit-transition:0.25s ease-out;
 	transition:0.25s ease-out;
-
+	display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    -moz-flex-direction: column;
+        -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
 }
 
 .portfolio-item-overlay h4{
